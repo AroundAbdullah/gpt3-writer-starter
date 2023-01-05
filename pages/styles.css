@@ -172,7 +172,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background: linear-gradient(45deg, red, blue);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -326,15 +326,15 @@ textarea {
     color: rgba(255, 255, 255, 0.5);
 }
 
-@media (min-width: 810px) and (max-width: 1199px) {
+@media (min-width: 650px) and (max-width: 900px) {
     .container {
-        max-width: 600px;
-        width: 100%;
+        max-width: 400px;
+        width: 75%;
     }
 
     .prompt-container {
-        max-width: 600px;
-        width: 100%;
+        max-width: 400px;
+        width: 75%;
     }
 
     .prompt-box {

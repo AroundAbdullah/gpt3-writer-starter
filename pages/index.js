@@ -37,7 +37,7 @@ const onUserChangedText = (event) => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>Tweet Generator</title>
       </Head>
       <div className="container">
         <div className="header">
@@ -49,7 +49,7 @@ const onUserChangedText = (event) => {
                   loop={1}
                   wrapper='b'
                   steps={[
-                    'input the title',
+                    'write the first liner for your tweet below!',
                     100,
                   ]}
                   />
@@ -57,7 +57,7 @@ const onUserChangedText = (event) => {
           </div>
         </div>
         <div className="prompt-container">
-          <textarea placeholder="start typing here" className="prompt-box" value={userInput} onChange={onUserChangedText} />
+          <textarea placeholder="start typing your tweet title in here" className="prompt-box" value={userInput} onChange={onUserChangedText} />
           <div className="prompt-buttons">
             <a
               className={isGenerating ? 'generate-button loading' : 'generate-button'}
